@@ -1,0 +1,154 @@
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    padding: 0;
+    margin: 0;
+    min-height: 105vh;
+    display: grid;
+    place-items: center;
+    background: url(../images/sange.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center; 
+    animation: fadeInBackground 0s ease;
+    opacity: .9;
+}
+
+#welcomeMessage {
+    cursor: pointer;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px 30px;
+    border-radius: 25px;
+    color: #fff;
+    box-shadow: 0 4px 15px #7289da;
+    transition: all 0.3s cubic-bezier(0.20, 0.6, 0.20, 1), box-shadow 0.5s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    animation: fadeInElement 2s ease;
+}
+
+#welcomeMessage:hover {
+    transform: scale(1.2);
+    background: linear-gradient(to right, #7148bd, #3263ac);
+}
+
+.container {
+    display: none;
+    width: 25vw;
+    height: 20vh;
+    padding: 1rem 0;
+    margin: 0 2rem;
+    text-align: center;
+    background: black;
+    border-radius: 0;
+    border-top-left-radius: 5px; 
+    border: 1px solid whitesmoke;
+    opacity: 0.9 !important;
+    animation: scaleUp 0.5s ease forwards; 
+}
+
+h1 {
+    margin: auto;
+    padding: 0;
+    color: #9c9c9c;
+}
+h1:hover {
+    color: #7289da;
+    cursor: pointer;
+}
+
+p {
+    font-size: 20px;
+}
+p code {
+    display: block;
+    margin: 5px auto;
+}
+
+
+.card-photo {
+    width: 139.59px;
+    height: 139.59px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    float: left;
+    margin: 0 1rem;
+    transition: all 0.3s;
+}
+img:hover {
+    opacity: .8;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.body button:hover {
+    cursor: pointer;
+    color: black;
+    background: whitesmoke;
+}
+.hr {
+    display: none;
+}
+
+.doughnut {
+    cursor: pointer;
+}
+.container .body .doughnut {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+.container .body .doughnut:hover {
+    background: none;
+}
+.socials a {
+    text-align: center;
+    font-size: 20px;
+    float: right;
+}
+.socials li {
+    transition: all 0.3s;
+}
+.socials li:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.social-icon {
+    font-size: 24px;
+    margin: 0 10px;
+    color: white;
+    transition: all 0.3s;
+}
+.social-icon:hover {
+    color: #7289da;
+    cursor: pointer;
+    transform: scale(1.2)
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+    margin: 1rem;
+}
+
+ul li:hover {
+    opacity: .7; 
+    cursor: pointer;
+}
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    margin: 10px;
+    transform: translateX(-50%);
+}
+
+
+@keyframes fadeInElement {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
